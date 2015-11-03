@@ -1,0 +1,73 @@
+html {
+  border-top: .375rem solid #333;
+  width: 100%;
+}
+body {
+  font-family: "Georgia", serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 0;
+  text-align: left;
+}
+header {
+  display: block;
+  margin: 3rem auto 3rem auto;
+  text-align: center;
+}
+header>h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 3rem auto 0 auto;
+  padding: 0;
+}
+header>time {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 90%;
+}
+header>p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body>p {
+  margin: 1.5rem auto;
+  padding: 0;
+  max-width: 45rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 3rem auto 1.5rem auto;
+  padding: 0;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 3rem auto 1.5rem auto;
+  padding: 0;
+  text-align: center;
+}
+body blockquote {
+  border-left: .3em solid silver;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 1.5rem auto;
+  max-width: 80%;
+  padding-left: 1em;
+}
+footer {
+  clear: both;
+  display: block;
+  margin: 1.5rem 0 0 0;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+footer>p {
+  margin: 1.5rem auto 0 auto;
+  padding: 0 1rem;
+}
