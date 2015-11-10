@@ -7,4 +7,4 @@ layout: post
 
 Dies ist mein erster Artikel auf programmicha.de und gleichzeitig mein erster Schritt auf einer neuen Abenteuerreise mit diesem Blog und dem einen oder anderen Mit<del>reisenden</del>lesenden.
 
-[Komm doch einfach mit!](http://programmicha.de/)
+[Komm doch einfach mit!]({{site.baseUrl}}/)

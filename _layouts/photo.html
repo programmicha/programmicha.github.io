@@ -5,21 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="{{site.author}}">
 <title>{{page.title}}</title>
-<link rel="stylesheet" type="text/css" href="../../../../css/standard.css">
+<link rel="stylesheet" type="text/css" href="{{site.baseUrl}}/css/foto.css">
 </head>
 <body itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <p><a href="http://programmicha.de/" title="Zur Startseite"><img alt="Site Logo" src="../../../../img/icon-programmicha.svg" height="64" width="64"/></a></p>
-    <h1 itemprop="name">{{page.title}}</h1>
-    <time itemprop="datePublished" datetime="{{page.date}}">vom {{ page.date | date_to_long_string }}</time>
-  </header>
+{% include header.html %}
 {{ content }}
-  <footer>
-    <meta itemprop="dateModified" content="{{dateModified}}" />
-    <p>Gemacht aus und mit viel Neugier <br />von <a href="http://michael-pralow.de/" rel="author" itemprop="author creator copyrightHolder">Michael R. Pralow</a>.</p>
-    <p><a href="http://programmicha.de/impressum/">Impressum</a> & <a href="http://programmicha.de/datenschutz/">Datenschutz</a></p>
-    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Lizenz: Creative CommonsNamensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International"><img alt="Creative Commons License Image" src="../../../../img/by-nc-sa.svg" height="42" width="120"></a></p>
-    <p><a href="http://programmicha.de/" title="Zur Startseite"><img alt="Site Logo" src="../../../../img/icon-programmicha.svg" height="64" width="64"/></a></p>
-  </footer>
+{% include footer.html %}
 </body>
 </html>
