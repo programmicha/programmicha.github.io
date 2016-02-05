@@ -3,3 +3,5 @@ permalink: pretty
 name: Programmicha.de - Abenteuer mit Softwarearchitektur, Fotografie und dem ganzen Rest
 description: Programmicha.de - Abenteuer mit Softwarearchitektur, Fotografie und dem ganzen Rest
 url: http://programmicha.de
+gems:
+  - jekyll-sitemap
