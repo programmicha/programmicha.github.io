@@ -8,9 +8,9 @@ thumbnail: olympus-om2n-320x320.jpg
 
 [![Olympus OM-2n]({{site.baseUrl}}/img/olympus-om2n-1280x960.jpg "Olympus OM-2n")]({{site.baseUrl}}/img/olympus-om2n-1280x960.jpg "Direktlink")
 
-(M)eine analoge Fotokamera [Olympus OM-2n][link1].
+(M)eine analoge Fotokamera [Olympus OM-2n][link1]. Gibt es auch bei Flickr zu [sehen][link4].
 
-Für dieses Foto habe ich auch zum ersten Mal intensiv ein faltbares [Lichtzelt][link2] genutzt, konkret das [Foldio Version 1][link2]. Gibt es auch bei Flickr zu [sehen][link4].
+Für dieses Foto habe ich auch zum ersten Mal intensiv ein faltbares [Lichtzelt][link2] genutzt, konkret das [Foldio Version 1][link2].
 
 [link1]: https://de.wikipedia.org/wiki/Olympus_OM-2#Olympus_OM-2n
 [link2]: https://de.wikipedia.org/wiki/Lichtzelt
