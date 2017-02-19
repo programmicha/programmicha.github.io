@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="{{site.author}}">
+<title>{{page.title}}</title>
+<link rel="stylesheet" type="text/css" href="{{site.baseUrl}}/css/standard.css">
+<style type="text/css">
+ol {
+  margin: 0 auto;
+  padding: 0;
+}
+ol li {
+  margin: 0;
+  padding: 0;
+}
+ol li a h1 {
+  display: inline;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+</style>
+</head>
+<body itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <p><a href="{{site.baseUrl}}/" title="Zur Startseite"><img alt="Site Logo" src="{{site.baseUrl}}/img/icon-programmicha.svg" height="64" width="64"/></a></p>
+    <p><a href="{{site.baseUrl}}/faq/">FAQ</a></p>
+    <h1 itemprop="name">Alle Rezepte</h1>
+  </header>
+  <section>
+    <h2>Für den <a href="http://omniasweden.com/de/home/">Omnia</a> Backofen</h2>
+    <ol reversed="reversed">
+{% for post in site.tags['omnia'] %}
+      <li itemprop="blogpost" itemscope="" itemtype="http://schema.org/BlogPosting"><article><a itemprop="url" href="{{post.url}}"><h1>{{post.title}}</h1></a>&nbsp;<meta itemprop="datePublished" content="{{post.date}}"><meta itemprop="dateModified" content="{{post.dateModified}}"></article></li>
+{% endfor %}
+    </ol>
+  </section>
+  <footer>
+    {% include footer-archiv-links.html %}
+    <p itemprop="author creator copyrightHolder"><span itemscope itemtype="http://schema.org/Person">Gemacht aus und mit viel Neugier <br />von <a href="http://michael-pralow.de/" rel="author" itemprop="url"><span itemprop="name">Michael R. Pralow</span></a>.</span></p>
+    <p><a href="{{site.baseUrl}}/impressum/">Impressum</a> & <a href="{{site.baseUrl}}/datenschutz/">Datenschutz</a></p>
+    <p><a itemprop="license" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Lizenz: Creative CommonsNamensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International"><img alt="Creative Commons License Image" src="{{site.baseUrl}}/img/by-nc-sa.svg" height="42" width="120"></a></p>
+    <p><a href="{{site.baseUrl}}/faq/">FAQ</a></p>
+    <p><a href="{{site.baseUrl}}/" title="Zur Startseite"><img alt="Site Logo" src="{{site.baseUrl}}/img/icon-programmicha.svg" height="64" width="64"/></a></p>
+  </footer>
+</body>
+</html>

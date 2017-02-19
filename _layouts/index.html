@@ -10,36 +10,9 @@
 <link rel="icon" href="{{site.baseUrl}}/img/favicon.png" type="image/png">
 <link rel="stylesheet" type="text/css" href="{{site.baseUrl}}/css/standard.css">
 <style type="text/css">
-body {
-  text-align: center;
-  max-width: none;
-}
-header>p:nth-of-type(2) {
-  margin: 0 auto;
-  max-width: none;
-  padding: 0;
-}
-header>p:nth-of-type(2) img {
-  display: block;
-  margin: 0 auto;
-}
-header>p:nth-of-type(3) {
-  max-width: 35rem;
-  margin: 0 auto;
-  text-align: center;
-}
-body header {
-  text-align: center;
-}
-body>p:nth-of-type(1),
-body>header>p:nth-of-type(1),
-body>header>p:nth-of-type(2) {
-  text-align: center;
-}
 ol {
   list-style-type: none;
   margin: 0 auto;
-  /*max-width: 90%;*/
   padding: 0;
   text-align: center;
 }
@@ -47,46 +20,52 @@ ol li {
   margin: 0;
   padding: 0;
 }
-ol li a {
-  /*padding-left: 1rem;*/
-}
 ol li a h1 {
   display: inline;
   font-size: 1.3em;
   font-weight: normal;
 }
-section:nth-of-type(2) {
-  max-width: 90%;
-  margin: 0 auto;
+section {
+  text-align: center;
 }
 section:nth-of-type(2) ol li {
-  float: left;
-  width: 320px;
   line-height: 0;
 }
-section:nth-of-type(2) ol li article {
-  margin: 0;
-  padding: 0;
+@media only screen and (min-width: 640px) {
+  section:nth-of-type(2) {
+    width: 640px;
+  }
+  section:nth-of-type(2) ol li {
+    float: left;
+    width: 320px;
+  }
 }
 </style>
 </head>
-<body itemscope="" itemtype="http://schema.org/Blog">
+<body itemscope itemtype="http://schema.org/Blog">
   <header>
     <p><a href="{{site.baseUrl}}/" title="Zur Startseite"><img itemprop="image" alt="Site Logo" src="{{site.baseUrl}}/img/icon-programmicha.svg" height="64" width="64"></a></p>
+    <p><a href="{{site.baseUrl}}/faq/">FAQ</a></p>
     <h1>Programmicha.de</h1>
     <p><img alt="Portrait photo of Michael Reinhard Pralow" src="{{site.baseUrl}}/img/portrait-michael-pralow.jpg">Hi, ich bin <strong>Micha</strong>.</p>
     <p itemprop="description">Hier auf <a href="{{site.baseUrl}}/">Programmicha.de</a> schreibe ich zu meinen Abenteuern mit Software­architektur, Fotografie und dem ganzen Rest.</p>
   </header>
   <section>
-    <h2>Artikel</h2>
+    <h2>Zuletzt geschrieben</h2>
     <ol reversed="reversed">
-{% for post in site.posts %}{% if post.layout == 'post' %}<li itemprop="blogpost" itemscope="" itemtype="http://schema.org/BlogPosting"><article><a itemprop="url" href="{{post.url}}"><h1>{{post.title}}</h1></a>&nbsp;<meta itemprop="datePublished" content="{{post.date}}"><meta itemprop="dateModified" content="{{post.dateModified}}"></article></li>{% endif %}{% endfor %}
+{% assign geschriebenPosts = site.posts | where_exp:'item', "item.tags contains 'post' " %}
+{% for post in geschriebenPosts limit: 12 %}
+      <li itemprop="blogpost" itemscope itemtype="http://schema.org/BlogPosting"><article><a itemprop="url" href="{{post.url}}"><h1 itemprop="name">{{post.title}}</h1></a>&nbsp;<meta itemprop="datePublished" content="{{post.date}}"><meta itemprop="dateModified" content="{{post.dateModified}}"></article></li>
+{% endfor %}
     </ol>
   </section>
   <section>
-    <h2>Fotos</h2>
+    <h2>Zuletzt gesehen</h2>
     <ol reversed="reversed">
-{% for post in site.posts %}{% if post.layout == 'photo' %}<li itemprop="blogpost" itemscope="" itemtype="http://schema.org/ImageObject"><article><a itemprop="url" href="{{post.url}}"><img src="{{site.baseUrl}}/img/{{post.thumbnail}}" alt="{{post.title}}" title="{{post.title}}"></a>&nbsp;<meta itemprop="datePublished" content="{{post.date}}"><meta itemprop="dateModified" content="{{post.dateModified}}"></article></li>{% endif %}{% endfor %}
+{% assign fotoPosts = site.tags.foto %}
+{% for post in fotoPosts limit: 12 %}
+      <li itemprop="blogpost" itemscope itemtype="http://schema.org/BlogPosting"><article><a itemprop="url" href="{{post.url}}"><img src="{{site.baseUrl}}/img/{{post.thumbnail}}" alt="{{post.title}}" title="{{post.title}}"></a>&nbsp;<meta itemprop="datePublished" content="{{post.date}}"><meta itemprop="dateModified" content="{{post.dateModified}}"></article></li>
+{% endfor %}
     </ol>
   </section>
 {% include footer.html %}

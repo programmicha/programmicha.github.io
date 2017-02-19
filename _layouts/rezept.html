@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="{{site.author}}">
+<title>{{page.title}}</title>
+<link rel="stylesheet" type="text/css" href="{{site.baseUrl}}/css/standard.css">
+<style type="text/css">
+ul:first-of-type {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+ul:first-of-type li {
+  display: inline;
+}
+.recipe-icon {
+  height: 4rem;
+}
+</style>
+</head>
+<body itemscope itemtype="http://schema.org/Recipe">
+{% include header.html %}
+<ul>
+  <li itemprop="prepTime"><img class="recipe-icon" src="{{site.url}}/img/icon-preparation-time.png" alt="Arbeitszeit" /> {{ page.rezeptdaten.arbeitszeit }}</li>
+  <li itemprop="cookTime"><img class="recipe-icon" src="{{site.url}}/img/icon-cooking-time.png" alt="Koch-/Backzeit" /> {{ page.rezeptdaten.kochbackzeit }}</li>
+  <li><img class="recipe-icon" src="{{site.url}}/img/icon-waiting-time.png" alt="Wartezeit" /> {{ page.rezeptdaten.wartezeit }}</li>
+</ul>
+{{ content }}
+<h2>Abkürzungen</h2>
+<dl>
+  <dt><dfn>EL</dfn></dt>
+  <dd>Esslöffel</dd>
+  <dt><dfn>TL</dfn></dt>
+  <dd>Teelöffel</dd>
+</dl>
+{% include footer.html %}
+</body>
+</html>

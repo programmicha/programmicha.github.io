@@ -4,6 +4,8 @@ dateModified: 2016-02-23
 title: 'Foto: Sehnsucht'
 layout: photo
 thumbnail: sehnsucht-320x320.jpg
+history: https://github.com/programmicha/programmicha.github.io/commits/master/_posts/2016-02-23-foto-sehnsucht.md
+tag: foto
 ---
 
 [![Foto von Wasserläufern am Strand Venice Beach in Los Angelos, USA]({{site.baseUrl}}/img/sehnsucht-1280x960.jpg "Wasserläufer Venice Beach")]({{site.baseUrl}}/img/sehnsucht-1280x960.jpg "Direktlink")

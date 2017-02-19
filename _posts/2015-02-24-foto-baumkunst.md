@@ -4,14 +4,14 @@ dateModified: 2015-02-24
 title: 'Foto: Baumkunst'
 layout: photo
 thumbnail: baumkunst-320x320.jpg
+history: https://github.com/programmicha/programmicha.github.io/commits/master/_posts/2015-02-24-foto-baumkunst.md
+tag: foto
 ---
 
 [![Baumkunst]({{site.baseUrl}}/img/baumkunst-1280x960.jpg "Baumkunst")]({{site.baseUrl}}/img/baumkunst-1280x960.jpg "Direktlink")
 
 Die erste Frage bei dem Foto ist vermutlich nicht, wie ist es entstanden, sondern was wird hier eigentlich dargestellt?
-Ehrlich gesagt wusste ich das bei der Aufnahme selbst nicht so genau.
-
-Aber der Reihe nach.
+Ehrlich gesagt wusste ich das bei der Aufnahme selbst nicht so genau. Aber der Reihe nach.
 
 ## Geschichte hinter dem Foto
 

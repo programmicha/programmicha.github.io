@@ -4,6 +4,8 @@ dateModified: 2016-12-28
 title: 'Foto: Olympus OM-2n'
 layout: photo
 thumbnail: olympus-om2n-320x320.jpg
+history: https://github.com/programmicha/programmicha.github.io/commits/master/_posts/2016-02-05-foto-olympus-om2n.md
+tag: foto
 ---
 
 [![Olympus OM-2n]({{site.baseUrl}}/img/olympus-om2n-1280x960.jpg "Olympus OM-2n")]({{site.baseUrl}}/img/olympus-om2n-1280x960.jpg "Direktlink")
