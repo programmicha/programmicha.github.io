@@ -3,7 +3,7 @@ date: 2017-02-19
 dateModified: 2017-02-19
 title: 'Gelesen: A Visual Journey von Michael A. Smith'
 layout: review
-history: https://github.com/programmicha/programmicha.github.io/commits/master/_posts/2017-02-19-foto-gelesen-a-visual-journey-michael-a-smith.md
+history: https://github.com/programmicha/programmicha.github.io/commits/master/_posts/2017-02-19-gelesen-a-visual-journey-von-michael-a-smith.md
 tags: [post, review, buch]
 ---
 
